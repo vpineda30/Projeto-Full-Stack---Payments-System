@@ -1,0 +1,130 @@
+@import url("../../styles/root.css");
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding-left: 350px;
+  padding-right: 110px;
+}
+
+.home-title {
+  margin-top: 5%;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 2px solid;
+  border-color: var(--color-primary4);
+  color: var(--color-primary4);
+  animation: itens-appear 0.4s ease;
+}
+
+main .analytcs {
+    display: flex;
+    gap: 3%;
+}
+
+main .analytcs .balance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5%;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  width: 35%;
+  height: 150px;
+  padding: 2%;
+}
+
+main .analytcs .balance h3 {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+main .analytcs .balance h2 {
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+main .analytcs .turnover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5%;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  background-color: var(--color-primary2);
+  width: 35%;
+  height: 150px;
+  padding: 2%;
+}
+
+main .analytcs .turnover h3 {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    color: var(--color-background);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+main .analytcs .turnover h2 {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    color: var(--color-background);
+    margin-top: 2%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+main .analytcs .transactions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5%;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  background-color: var(--color-primary3);
+  width: 35%;
+  height: 150px;
+  padding: 2%;
+}
+
+main .analytcs .transactions h3 {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    color: var(--color-background);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+main .analytcs .transactions h2 {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    color: var(--color-background);
+    margin-top: 2%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@keyframes itens-appear {
+  0% {
+    margin-top: 6%;
+    color: transparent;
+    border-color: transparent;
+  }
+  100% {
+    margin-top: 5%;
+    color: var(--color-primary4);
+  }
+}
