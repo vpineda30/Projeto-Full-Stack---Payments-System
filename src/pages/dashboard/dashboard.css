@@ -5,6 +5,7 @@ main {
   flex-direction: column;
   padding-left: 350px;
   padding-right: 110px;
+  margin-bottom: 700px;
 }
 
 .home-title {

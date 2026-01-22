@@ -2,8 +2,9 @@
 
 .aside {
   display: flex;
-  position: absolute;
+  position: fixed;
   height: 100vh;
+  z-index: 0;
 }
 
 .aside nav {

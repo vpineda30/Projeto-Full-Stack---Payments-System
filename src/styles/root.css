@@ -1,7 +1,11 @@
 :root {
     --shadow: rgba(95, 95, 95, 0.212) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    --shadow2: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    --shadow-card: 0 0px 20px var(--color-primary1);
+    --color-primary1: #7bd25b;
     --color-primary2: #75cd49;
     --color-primary3: #39a043;
     --color-primary4: #3b8c24;
+    --color-primary5: rgba(32, 32, 32, 0.804);
     --color-background: rgb(248, 248, 248);
 }

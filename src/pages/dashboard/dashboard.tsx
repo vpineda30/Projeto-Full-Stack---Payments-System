@@ -1,7 +1,8 @@
+import { Footer } from "../../components/footer/footer";
 import { SideBar } from "../../components/side-bar/side-bar";
-import './home.css'
+import './dashboard.css'
 
-export function Home() {
+export function Dashboard() {
   return (
     <>
       <SideBar />
@@ -27,6 +28,8 @@ export function Home() {
           </div>
         </div>
       </main>
+
+      <Footer />
     </>
   );
 }
