@@ -126,5 +126,6 @@ main .analytcs .transactions h2 {
   100% {
     margin-top: 5%;
     color: var(--color-primary4);
+    border-color: var(--color-primary4);
   }
 }
