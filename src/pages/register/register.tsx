@@ -21,7 +21,6 @@ export function Register() {
                 </form>
             </div>
 
-
             <div className="container-image">
                 <img src={image} alt="" />
                 <div className="container-text">

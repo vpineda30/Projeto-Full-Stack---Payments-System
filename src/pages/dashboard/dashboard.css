@@ -20,8 +20,8 @@ main {
 }
 
 main .analytcs {
-    display: flex;
-    gap: 3%;
+  display: flex;
+  gap: 3%;
 }
 
 main .analytcs .balance {
@@ -30,26 +30,28 @@ main .analytcs .balance {
   justify-content: center;
   margin-top: 5%;
   border-radius: 8px;
-  box-shadow: var(--shadow);
+  color: transparent;
   width: 35%;
   height: 150px;
   padding: 2%;
+  animation: balance-card-appear 0.5s ease 0.5s;
+  animation-fill-mode: forwards;
 }
 
 main .analytcs .balance h3 {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 500;
-    font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
 }
 
 main .analytcs .balance h2 {
-    display: flex;
-    align-items: center;
-    margin-top: 2%;
-    font-size: 20px;
-    font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 main .analytcs .turnover {
@@ -58,31 +60,31 @@ main .analytcs .turnover {
   justify-content: center;
   margin-top: 5%;
   border-radius: 8px;
-  box-shadow: var(--shadow);
-  background-color: var(--color-primary2);
+  background: transparent;
+  color: transparent;
   width: 35%;
   height: 150px;
   padding: 2%;
+  animation: turnover-card-appear 0.5s ease 0.6s;
+  animation-fill-mode: forwards;
 }
 
 main .analytcs .turnover h3 {
-    display: flex;
-    align-items: center;
-    background: transparent;
-    color: var(--color-background);
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 main .analytcs .turnover h2 {
-    display: flex;
-    align-items: center;
-    background: transparent;
-    color: var(--color-background);
-    margin-top: 2%;
-    font-size: 20px;
-    font-weight: 500;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  margin-top: 2%;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 main .analytcs .transactions {
@@ -91,31 +93,31 @@ main .analytcs .transactions {
   justify-content: center;
   margin-top: 5%;
   border-radius: 8px;
-  box-shadow: var(--shadow);
-  background-color: var(--color-primary3);
+  background: transparent;
+  color: transparent;
   width: 35%;
   height: 150px;
   padding: 2%;
+  animation: transactions-card-appear 0.5s ease 0.7s;
+  animation-fill-mode: forwards;
 }
 
 main .analytcs .transactions h3 {
-    display: flex;
-    align-items: center;
-    background: transparent;
-    color: var(--color-background);
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 main .analytcs .transactions h2 {
-    display: flex;
-    align-items: center;
-    background: transparent;
-    color: var(--color-background);
-    margin-top: 2%;
-    font-size: 20px;
-    font-weight: 500;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  margin-top: 2%;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 @keyframes itens-appear {
@@ -128,5 +130,40 @@ main .analytcs .transactions h2 {
     margin-top: 5%;
     color: var(--color-primary4);
     border-color: var(--color-primary4);
+  }
+}
+
+@keyframes balance-card-appear {
+  from {
+    margin-top: 10%;
+  }
+  to {
+    margin-top: 5%;
+    box-shadow: var(--shadow);
+    color: black;
+  }
+}
+
+@keyframes transactions-card-appear {
+  from {
+    margin-top: 10%;
+  }
+  to {
+    margin-top: 5%;
+    box-shadow: var(--shadow);
+    background-color: var(--color-primary3);
+    color: var(--color-background);
+  }
+}
+
+@keyframes turnover-card-appear {
+  from {
+    margin-top: 10%;
+  }
+  to {
+    margin-top: 5%;
+    box-shadow: var(--shadow);
+    background-color: var(--color-primary2);
+    color: var(--color-background);
   }
 }
